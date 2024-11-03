@@ -1,0 +1,52 @@
+<div class="home-container">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h2>Welcome back, Lungile</h2>
+      <p class="date">Today’s Date:{{currentDate}} <span id="date"></span></p>
+    </div>
+
+    <!-- Upcoming Appointments Section -->
+    <div class="appointments-section">
+      <h3>Upcoming Appointments</h3>
+      <div class="appointment-card">
+        <p class="appointment-title">Appointment 1</p>
+        <p>Date & Time: <span>12/12/2024 10:00 AM</span></p>
+        <p>Location: <span>Office A</span></p>
+      </div>
+      <div class="appointment-card">
+        <p class="appointment-title">Appointment 2</p>
+        <p>Date & Time: <span>12/13/2024 1:00 PM</span></p>
+        <p>Location: <span>Office B</span></p>
+      </div>
+      <div class="appointment-card">
+        <p class="appointment-title">Appointment 3</p>
+        <p>Date & Time: <span>12/14/2024 3:00 PM</span></p>
+        <p>Location: <span>Office C</span></p>
+      </div>
+      <div class="action-buttons">
+        <button class="view-all-button">View All Appointments</button>
+        <button class="book-new-button" (click)="openBookAppointmentDialog()">Book New Appointment</button>
+      </div>
+    </div>
+
+    <!-- Additional Widgets -->
+    <div class="extra-section">
+      <!-- Mini Calendar Placeholder -->
+      <div class="mini-calendar">
+        <h3>Calendar</h3>
+        <p>[Calendar Widget]</p>
+      </div>
+
+      <!-- Notifications Placeholder -->
+      <div class="notifications">
+        <h3>Notifications</h3>
+        <p>No new notifications</p>
+      </div>
+    </div>
+
+    <!-- Profile/Settings Link -->
+    <div class="settings-link">
+      <a href="/settings">Settings/Profile</a>
+    </div>
+  </div>

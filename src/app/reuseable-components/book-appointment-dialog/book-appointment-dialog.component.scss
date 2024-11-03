@@ -1,0 +1,15 @@
+/* Center content inside the dialog */
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  
+  /* Style form fields and set max width for better readability */
+  mat-form-field {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+  }
+  

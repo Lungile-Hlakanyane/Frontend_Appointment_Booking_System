@@ -1,0 +1,133 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Home container */
+  .home-container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-section h2 {
+    color: #6e8efb;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Appointments Section */
+  .appointments-section {
+    margin-bottom: 2rem;
+  }
+  
+  .appointments-section h3 {
+    color: #6e8efb;
+    margin-bottom: 1rem;
+  }
+  
+  .appointment-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .appointment-card p {
+    margin: 0.3rem 0;
+    color: #555;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .view-all-button,
+  .book-new-button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .view-all-button:hover,
+  .book-new-button:hover {
+    background: linear-gradient(135deg, #5b7bd5, #915bc9);
+  }
+  
+  /* Extra Section (Calendar and Notifications) */
+  .extra-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .mini-calendar,
+  .notifications {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mini-calendar h3,
+  .notifications h3 {
+    color: #6e8efb;
+  }
+  
+  /* Settings/Profile Link */
+  .settings-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .settings-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .settings-link a:hover {
+    text-decoration: underline;
+  }
+  

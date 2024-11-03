@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Book New Appointment</h2>
+<mat-dialog-content class="dialog-content">
+  <form [formGroup]="appointmentForm">
+    <!-- Date and Time Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Date & Time</mat-label>
+      <input matInput formControlName="dateTime" type="datetime-local">
+    </mat-form-field>
+
+    <!-- Location Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Location</mat-label>
+      <input matInput formControlName="location" placeholder="Enter location">
+    </mat-form-field>
+
+    <!-- Description Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" placeholder="Enter description"></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="bookAppointment()">Book</button>
+</mat-dialog-actions>
